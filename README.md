@@ -6,6 +6,14 @@ Building a Flight Search API
 
 In this assessment, your task is to create a Flight Search API using a freely available flight search API provider, such as Flight Radar on Rapid API, or any other suitable flight search API. Your solution should enable users to search for flight information based on specific parameters.
 
+## Design Decision
+
+For this project I chose to develop the api with python programming language and FastAPI API framework for easy development and testing.
+
+## Challenges
+
+The only challenge I faced was getting suitable flight API route for the search API project.
+
 ## Requirements
 
 Create ``.env`` file in the project directory and add the following
