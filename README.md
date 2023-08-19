@@ -47,7 +47,7 @@ Run the following command in the command-line
 - Run uvicorn command to start the project server
 
   ``
-  uvicorn app.v1.main:app --reload
+  uvicorn api.v1.main:app --reload
   ``
 
 To stop the project server press ``Ctrl`` + ``C`` or ``command`` + ``C`` depending on your machine.
