@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Technical Assessment: Building a Flight Search API."""
 
-from typing import Any, Dict, Coroutine
+from typing import Dict
 import requests
 from fastapi import FastAPI, HTTPException, status
 from api.v1.settings import settings
@@ -21,7 +21,7 @@ app = FastAPI(
 
 
 @app.get("/api/v1/search/", tags=["search"], status_code=200)
-async def search(query: str, limit: str = 10) -> Coroutine[Any, Any, Dict]:
+async def search(query: str, limit: str = 10) -> Dict:
     """
     Search for a flight and returns relevant flight data.
 
