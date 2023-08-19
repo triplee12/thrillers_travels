@@ -8,6 +8,12 @@ In this assessment, your task is to create a Flight Search API using a freely av
 
 ## Requirements
 
+Create ``.env`` file in the project directory and add the following
+
+- ``FLIGHT_API_URL = "https://flight-radar1.p.rapidapi.com/flights/search"``
+- ``X_RapidAPI_Key = "XXXXXXXXXXXXXXXXX"`` replace with your own key
+- ``X_RapidAPI_Host = "flight-radar1.p.rapidapi.com"``
+
 Make sure you have python3 installed in your machine before running commands below.
 
 ## Installation
