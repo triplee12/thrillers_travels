@@ -45,7 +45,12 @@ async def search(query: str, limit: str = 10) -> Dict:
                 params=querystring,
                 timeout=3
             )
-            return response.json()
+            if len(response.json()['results']) > 0:
+                return response.json()
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="No results found"
+            )
         except requests.exceptions.Timeout as time_out:
             raise HTTPException(
                 status_code=status.HTTP_408_REQUEST_TIMEOUT,
